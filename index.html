@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,31 @@
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
 </head>
+
 <body>
     <h1>Etch-A-Sketch</h1>
-    <div id="grid-container"></div>
-    
+    <div class="game-container">
+        <div class="options">
+            <div class="slider-column">
+                Number of squares in grid: <div>min=10
+                    <input type="range" min="10" max="50" value="20" id="column-number-range" class="slider"> max=50
+                </div>
+            </div>
+            <div class="all-buttons">
+                <div class="buttons-options">
+                    <div class="button-grayscale"><button id="grayscale">grayscale</button></div>
+                    <div class="button-black"><button id="black">black</button></div>
+                    <div class="button-rainbow"><button id="rainbow">rainbow</button></div>
+                    <div class="button-clear"><button id="clear">clear</button></div>
+                </div>
+                <div class="button-clean"><button id="clean">clean table</button></div>
+            </div>
+        </div>
+        <div id="grid-container"></div>
+    </div>
+    <footer><a class="footer-credits" href="mujic.me">by tahir mujic</a></footer>
 </body>
+
 </html>
